@@ -3,7 +3,7 @@ import Illustration from "../../images/illustration-intro.svg";
 
 const Intro = () => {
   return (
-    <div className=" container even-columns intro-container">
+    <div className="container padding-block-900 even-columns intro-container">
       <div className="intro-left">
         <h1 className="fs-primary-heading fw-bold">
           Bring everyone together to build better product

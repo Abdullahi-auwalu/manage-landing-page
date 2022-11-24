@@ -2,7 +2,7 @@ import "./diff.css";
 
 const Diff = () => {
   return (
-    <div className=" container even-columns diff-container">
+    <div className=" container padding-block-900 even-columns diff-container">
       <div className="diff-left">
         <h2 className="fs-secondary-heading fw-bold">
           What's different about Manage?

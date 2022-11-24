@@ -12,7 +12,7 @@ const Footer = () => {
       className="
      footer bg-neutral-900"
     >
-      <div className="container even-columns">
+      <div className="container padding-block-700 even-columns">
         <div className=" cont-1">
           <div className="f-logo">
             <a href="/">
@@ -77,7 +77,7 @@ const Footer = () => {
         <div className="cont-3">
           <form action="">
             <input type="email" placeholder="abc@gmail.com" />
-            <button className="f-btn">Go</button>
+            <button className="btn">Go</button>
             <p>Copyright 2023. All Rights Reserved</p>
           </form>
         </div>

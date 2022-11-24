@@ -1,5 +1,7 @@
 :root {
+  --clr-accent-500: hsl(12, 60%, 45%);
   --clr-accent-400: hsl(12, 88%, 59%);
+  --clr-accent-300: hsl(12, 88%, 75%);
   --clr-accent-100: hsl(13, 100%, 96%);
 
   --clr-primary-400: hsl(228, 39%, 23%);
@@ -30,6 +32,16 @@
 
   --fs-nav: var(--fs-500);
   --fs-button: var(--fs-300);
+
+  --size-100: 0.25rem;
+  --size-200: 0.5rem;
+  --size-300: 0.75rem;
+  --size-400: 1rem;
+  --size-500: 1.5rem;
+  --size-600: 2rem;
+  --size-700: 3rem;
+  --size-800: 4rem;
+  --size-900: 5rem;
 }
 
 /* Utilities classes */
@@ -78,6 +90,7 @@
 
 .fs-primary-heading {
   font-size: var(--fs-primary-heading);
+  line-height: 1.1;
 }
 .fs-secondary-heading {
   font-size: var(--fs-secondary-heading);
@@ -96,6 +109,13 @@
   font-size: var(--fs-600);
 }
 
+.padding-block-900 {
+  padding-block: var(--size-900);
+}
+.padding-block-700 {
+  padding-block: var(--size-700);
+}
+
 .container {
   --max-width: 1110px;
   --padding: 1rem;
@@ -103,7 +123,7 @@
   margin-inline: auto;
 }
 
-/* General style */
+/* Gekneral style */
 body {
   font-size: var(--fs-body);
   font-family: var(--ff-body);
@@ -113,6 +133,36 @@ body {
 .even-columns {
   display: grid;
   gap: 1rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 100vmax;
+  padding: 1.25em 2.5em;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-button);
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-accent-400);
+  box-shadow: 0 1.125em 1em -1em var(--clr-accent-500);
+}
+
+.btn[data-type="inverted"] {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-accent-400);
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background-color: var(--clr-accent-300);
+}
+
+.btn[data-type="inverted"]:hover,
+.btn[data-type="inverted"]:focus-visible {
+  background-color: var(--clr-neutral-100);
+  color: var(--clr-accent-300);
 }
 
 @media (min-width: 50em) {
