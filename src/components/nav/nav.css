@@ -3,6 +3,7 @@
 }
 
 .nav-container {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -21,22 +22,16 @@
 }
 
 .toggle {
+  position: absolute;
+  right: 0.5rem;
   display: none;
   cursor: pointer;
   background: transparent;
   border: 0;
   padding: 0.5em;
 }
-#primary-navigation {
-  display: flex;
-  flex-direction: column;
-}
 
 @media (max-width: 50em) {
-  /* #primary-navigation {
-    display: block;
-  } */
-
   .toggle {
     display: block;
     cursor: pointer;
@@ -58,5 +53,14 @@
     list-style: none;
     gap: 0.5rem;
     display: none;
+  }
+
+  #primary-navigation {
+    position: absolute;
+    top: 3rem;
+    display: flex;
+    flex-direction: column;
+    right: 0.5rem;
+    background-color: #fff;
   }
 }

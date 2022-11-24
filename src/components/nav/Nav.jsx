@@ -13,11 +13,7 @@ const Nav = () => {
         <a href="/">
           <img src={Logo} alt="" />
         </a>
-        <button
-          onClick={() => setNavToggle(!navToggle)}
-          className="toggle"
-          aria-controls="primary-navigation"
-        >
+        <button onClick={() => setNavToggle(!navToggle)} className="toggle">
           <span className="visually-hidden">Menu</span>
           {navToggle ? (
             <img className="open-icon" src={CloseIcon} alt="" />
